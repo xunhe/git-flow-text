@@ -25,3 +25,14 @@ $ git add --all
 $ git status
 $ git commit --verbose
 ```
+
+## 第三步：撰写提交信息
+> TODO 后续会采用 webhook 自动更新从提交信息中拉去信息更细 jira 状态等
+
+提交commit时，必须给出完整扼要的提交信息，下面是一个范本。
+
+Bug fix
+
+* 解决 xxx 问题 jira: xxxx
+* 解决 xxx 问题 jira: xxxx
+第一行是不超过50个字的提要，然后空一行，罗列出改动原因、主要变动、以及需要注意的问题。最后，提供对应的网址（比如Bug ticket）。
