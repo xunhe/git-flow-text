@@ -15,3 +15,13 @@ $ git pull team(远程仓库名) sprint180829(远程仓库分支)
 # 切换分支
 $ git checkout master
 ```
+
+## 第二步：提交分支commit
+> 该过程 “非常非常” 建议通过 IDE 来完成，以便每一次提交都是经过检查的,确保没有提交不该提交的代码。
+
+分支修改后，就可以提交commit了。
+```
+$ git add --all
+$ git status
+$ git commit --verbose
+```
