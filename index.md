@@ -43,6 +43,18 @@ Bug fix
 $ git fetch origin
 $ git rebase origin/master
 ```
+## 第五步：合并commit
+分支开发完成后，很可能有一堆commit，但是合并到主干的时候，往往希望只有一个（或最多两三个）commit，这样不仅清晰，也容易管理。
+
+这里给出建议的做法，就是先撤销过去 X 个commit，然后再建一个新的。
+```
+# 这里 X === 5 
+$ git reset HEAD~5
+# 提交代码
+$  xxxx 详见 2 ~ 3 步
+# 推送代码
+$  xxxx 详见 6 步
+```
 
 ## 第六步：推送到远程仓库
 ```
@@ -52,4 +64,3 @@ git push origin sprint180829
 
 如果推送不上去，则命令要加上force参数，因为rebase以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送。
 
-如果推送布上去，则命令
