@@ -37,6 +37,13 @@ Bug fix
 * 解决 xxx 问题 jira: xxxx
 第一行是不超过50个字的提要，然后空一行，罗列出改动原因、主要变动、以及需要注意的问题。最后，提供对应的网址（比如Bug ticket）。
 
+## 第四步: 与主干同步
+分支的开发过程中，一定要要经常与主干保持同步。
+```
+$ git fetch origin
+$ git rebase origin/master
+```
+
 ## 第六步：推送到远程仓库
 ```
 git push origin sprint180829
